@@ -1,0 +1,133 @@
+@import '../../../styles/mixines.scss';
+
+.productCardBlock2 {
+    background-color: #fff7f1;
+
+
+  &__title1 {
+    @include onMobile {
+      font-family: sans-serif;
+      font-size: 24px;
+      line-height: 35px;
+      margin: 0;
+      padding: 0 0 0 7%;
+    }
+
+    @include onTablet {
+      font-family: sans-serif;
+      font-size: 24px;
+      line-height: 35px;
+      margin: 0;
+      padding: 0 0 0 7%;
+    }
+
+    @include onDesktop {
+      font-family: sans-serif;
+      font-size: 24px;
+      line-height: 35px;
+      margin: 0;
+      padding: 0 0 0 12%;
+    }
+  }
+
+  &__img {
+    @include onMobile {
+      width: 90%;
+      padding: 10% 0 0 7%;
+    }
+
+    @include onTablet {
+      width: 90%;
+      padding: 10% 0 0 7%;
+    }
+
+    @include onDesktop {
+      width: 90%;
+      padding: 10% 0 0 7%;
+    }
+  }
+
+  &__title2 {
+    @include onMobile {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 18px;
+      text-transform: uppercase;
+      padding: 0 0 0 7%;
+    }
+
+    @include onTablet {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 18px;
+      text-transform: uppercase;
+      padding: 0 0 0 7%;
+    }
+
+    @include onDesktop {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 18px;
+      text-transform: uppercase;
+      padding: 0 0 0 7%;
+    }
+  }
+
+  &__price {
+    @include onMobile {
+      color: #A18A68;
+      font-family: sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      padding: 0 0 10% 7%;
+      margin: 0;
+    }
+
+    @include onTablet {
+      color: #A18A68;
+      font-family: sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      padding: 0 0 10% 7%;
+      margin: 0;
+    }
+
+    @include onDesktop {
+      color: #A18A68;
+      font-family: sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      padding: 0 0 10% 7%;
+      margin: 0;
+    }
+  }
+}
+
+.desktop {
+  @include onMobile {
+    display: none;
+  }
+
+  @include onTablet {
+    display: none;
+  }
+
+  @include onDesktop {
+    display: block;
+  }
+}
+
+.display {
+  @include onDesktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5% 10% 5% 10%;
+  }
+}

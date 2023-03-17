@@ -1,0 +1,237 @@
+@import "../../../styles/mixines.scss";
+
+.footer {
+  @include onMobile {
+    background-image: url("../../../images/HomePage/GradientFooter.png");
+    background-size: cover;
+    padding: 43px 32px 43px 32px;
+  }
+
+  @include onTablet {
+    background-image: url("../../../images/HomePage/GradientFooterDesc.png");
+    background-size: cover;
+    padding: 43px 32px 43px 32px;
+  }
+
+  @include onDesktop {
+    background-image: url("../../../images/HomePage/GradientFooterDesc.png");
+    background-size: cover;
+    padding: 43px 32px 43px 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__block1 {
+    @include onDesktop {
+      width: 25%;
+      margin-right: 5%;
+    }
+
+    &--icon {
+      @include onMobile {
+        margin-bottom: 29px;
+      }
+
+      @include onTablet {
+        margin-bottom: 29px;
+      }
+
+      @include onDesktop {
+        margin-bottom: 29px;
+      }
+    }
+
+    &--text {
+      @include onMobile {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 11px;
+        line-height: 17px;
+        color: #fff7f1;
+        margin-bottom: 24px;
+      }
+
+      @include onTablet {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 18px;
+        line-height: 17px;
+        color: #fff7f1;
+        margin-bottom: 24px;
+      }
+
+      @include onDesktop {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 11px;
+        line-height: 17px;
+        color: #fff7f1;
+        margin-bottom: 24px;
+      }
+    }
+
+    &--links {
+      @include onMobile {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        gap: 12%;
+        margin-bottom: 17px;
+      }
+
+      @include onTablet {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        gap: 12%;
+        margin-bottom: 17px;
+      }
+
+      @include onDesktop {
+        display: flex;
+        width: 25%;
+        justify-content: space-between;
+        gap: 12%;
+        margin-bottom: 17px;
+      }
+    }
+  }
+
+  &__block2 {
+    @include onMobile {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    @include onTablet {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    @include onDesktop {
+      display: flex;
+      flex-direction: column;
+      gap: 1%;
+      width: 25%;
+    }
+
+    &--text {
+      @include onMobile {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 14px;
+        line-height: 36px;
+        color: #fff7f1;
+      }
+
+      @include onTablet {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 18px;
+        line-height: 36px;
+        color: #fff7f1;
+      }
+
+      @include onDesktop {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 15px;
+        line-height: 36px;
+        color: #fff7f1;
+        margin: 0;
+      }
+    }
+  }
+
+  &__block3 {
+    @include onMobile {
+      display: flex;
+      flex-direction: row;
+    }
+
+    @include onTablet {
+      display: flex;
+      flex-direction: row;
+    }
+
+    @include onDesktop {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+    }
+
+    &--text {
+      @include onMobile {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 12px;
+        line-height: 36px;
+        color: #fff7f1;
+      }
+
+      @include onTablet {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 15px;
+        line-height: 36px;
+        color: #fff7f1;
+      }
+
+      @include onDesktop {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 12px;
+        line-height: 36px;
+        color: #fff7f1;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.oneMoreFooter {
+  @include onMobile {
+    display: none;
+  }
+
+  @include onTablet {
+    display: none;
+  }
+
+  @include oneMorefooter {
+    display: block;
+  }
+
+  @include onDesktop {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+  }
+
+  &__link {
+    @include oneMorefooter {
+      display: block;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      font-size: 18px;
+      line-height: 36px;
+      color: #fff7f1;
+      text-decoration: none;
+    }
+
+    @include onDesktop {
+      display: block;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      font-size: 15px;
+      line-height: 36px;
+      color: #fff7f1;
+      text-decoration: none;
+      margin-bottom: 4%;
+    }
+  }
+}
+

@@ -5,13 +5,31 @@
 }
 
 @mixin onTablet {
-  @media (max-width: 768px) {
+  @media (min-width: 321px) {
+    @content;
+  }
+}
+
+@mixin extraTablet {
+  @media (min-width: 535px) {
     @content;
   }
 }
 
 @mixin onDesktop {
-  @media (max-width: 1280px) {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin forPie {
+  @media (min-width: 1390px) {
+    @content;
+  }
+}
+
+@mixin oneMorefooter {
+  @media (min-width: 538px) {
     @content;
   }
 }

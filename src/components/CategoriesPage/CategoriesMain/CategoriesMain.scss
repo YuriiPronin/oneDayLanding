@@ -1,0 +1,128 @@
+@import '../../../styles/mixines.scss';
+
+.categoriesMain {
+    background-color: #FFF7F1;
+
+    &__title {
+      @include onMobile {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        line-height: 21px;
+        margin: 0;
+        padding: 10% 0 10% 7%;
+      }
+
+      @include onTablet {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        line-height: 21px;
+        margin: 0;
+        padding: 10% 0 10% 7%;
+      }
+
+      @include onDesktop {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        line-height: 21px;
+        margin: 0;
+        padding: 5% 0 5% 7%;
+      }
+    }
+
+    &__boxDisplay {
+      @include onTablet {
+        display: grid;
+        gap: 20px 30px;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      }
+
+      @include onDesktop {
+        display: grid;
+        gap: 20px 30px;
+        grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+      }
+    }
+
+    &__box {
+      @include onMobile {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 0 5% 0;
+      }
+
+      @include onTablet {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 0 5% 0;
+      }
+
+      @include onDesktop {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 0 5% 0;
+      }
+    }
+
+    &__img {
+      @include onMobile {
+        width: 100%;
+      }
+
+      @include onTablet {
+        width: 100%;
+      }
+
+      @include onDesktop {
+        width: 100%;
+      }
+    }
+
+    &__productTitle {
+      @include onMobile {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        text-transform: uppercase;
+      }
+
+      @include onTablet {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 18px;
+        text-transform: uppercase;
+      }
+
+      @include onDesktop {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        text-transform: uppercase;
+      }
+    }
+
+    &__price {
+      @include onMobile {
+        font-family: sans-serif;
+        font-size: 18px;
+        line-height: 22px;
+        color: #A18A68;
+      }
+
+      @include onTablet {
+        font-family: sans-serif;
+        font-size: 18px;
+        line-height: 22px;
+        color: #A18A68;
+      }
+
+      @include onDesktop {
+        font-family: sans-serif;
+        font-size: 18px;
+        line-height: 22px;
+        color: #A18A68;
+      }
+    }
+}

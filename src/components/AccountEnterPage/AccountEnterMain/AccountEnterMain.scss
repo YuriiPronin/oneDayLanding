@@ -1,0 +1,245 @@
+@import '../../../styles/mixines.scss';
+
+.accountEnterMain {
+    background-color: #FFF7F1;
+
+    @include onTablet {
+      margin: 0 auto;
+    }
+
+  &__title {
+    @include onMobile {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 42px;
+      align-items: center;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 10% 0 10% 14%;
+
+    }
+
+    @include onTablet {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 42px;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 10% 0 10% 0;
+
+    }
+
+    @include onDesktop {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 42px;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 10% 0 10% 0;
+
+    }
+  }
+
+  &__enterButton {
+    @include onMobile {
+      display: inline-block;
+      width: 142px;
+      height: 30px;
+      font-family: sans-serif;
+      font-size: 12px;
+      line-height: 15px;
+      background-color: white;
+      border: none;
+      margin: 0 0 15% 5%;
+    }
+
+    @include onTablet {
+      display: inline-block;
+      width: 21%;
+      height: 30px;
+      font-family: sans-serif;
+      font-size: 12px;
+      line-height: 15px;
+      background-color: white;
+      border: none;
+      margin: 0 0 15% 30%;
+    }
+
+    @include onDesktop {
+      display: inline-block;
+      width: 30%;
+      height: 70px;
+      font-family: sans-serif;
+      font-size: 12px;
+      line-height: 15px;
+      background-color: white;
+      border: none;
+      margin: 0 0 15% 20%;
+    }
+  }
+
+  &__registrationButton {
+    @include onMobile {
+      display: inline-block;
+      width: 142px;
+      height: 30px;
+      font-family: sans-serif;
+      font-size: 12px;
+      line-height: 15px;
+      background-color: #EFEFEF;
+      border: none;
+    }
+
+    @include onTablet {
+      display: inline-block;
+      width: 21%;
+      height: 30px;
+      font-family: sans-serif;
+      font-size: 12px;
+      line-height: 15px;
+      background-color: #EFEFEF;
+      border: none;
+    }
+
+    @include onDesktop {
+      display: inline-block;
+      width: 30%;
+      height: 70px;
+      font-family: sans-serif;
+      font-size: 12px;
+      line-height: 15px;
+      background-color: #EFEFEF;
+      border: none;
+    }
+  }
+
+  &__input {
+    @include onMobile {
+      display: block;
+      width: 90%;
+      height: 24px;
+      background: none;
+      border: none;
+      border-bottom: 1px solid black;
+      margin: 0 auto 10%;
+    }
+
+    @include onTablet {
+      display: block;
+      width: 90%;
+      height: 24px;
+      background: none;
+      border: none;
+      border-bottom: 1px solid black;
+      margin: 0 auto 10%;
+    }
+
+    @include onDesktop {
+      display: block;
+      width: 60%;
+      height: 24px;
+      background: none;
+      border: none;
+      border-bottom: 1px solid black;
+      margin: 0 auto 10%;
+    }
+  }
+
+  &__checkbox {
+    @include onMobile {
+      padding: 0 0 10% 5%;
+      font-size: 13px;
+      line-height: 10px;
+    }
+
+    @include onTablet {
+      padding: 0 0 10% 5%;
+      font-size: 13px;
+      line-height: 10px;
+    }
+
+    @include onDesktop {
+      padding: 0 0 10% 20%;
+      font-size: 13px;
+      line-height: 10px;
+    }
+  }
+
+  &__submitButton {
+    @include onMobile {
+      display: block;
+      width: 204px;
+      height: 45px;
+      background-color: #000;
+      color: #FFF;
+      font-family: sans-serif;
+      font-size: 18px;
+      line-height: 18px;
+      margin: 0 auto;
+    }
+
+    @include onTablet {
+      display: block;
+      width: 204px;
+      height: 45px;
+      background-color: #000;
+      color: #FFF;
+      font-family: sans-serif;
+      font-size: 18px;
+      line-height: 18px;
+      margin: 0 auto;
+    }
+
+    @include onDesktop {
+      display: block;
+      width: 60%;
+      height: 70px;
+      background-color: #000;
+      color: #FFF;
+      font-family: sans-serif;
+      font-size: 18px;
+      line-height: 18px;
+      margin: 0 auto;
+    }
+  }
+
+  &__forgotPassword {
+    @include onMobile {
+      display: block;
+      background: none;
+      border: none;
+      font-family: sans-serif;
+      font-size: 12px;
+      line-height: 12px;
+      margin: 2% auto 0;
+      padding: 0 0 10% 0;
+    }
+
+    @include onTablet {
+      display: block;
+      background: none;
+      border: none;
+      font-family: sans-serif;
+      font-size: 12px;
+      line-height: 12px;
+      margin: 2% auto 0;
+      padding: 0 0 10% 0;
+    }
+
+    @include onDesktop {
+      display: block;
+      background: none;
+      border: none;
+      font-family: sans-serif;
+      font-size: 20px;
+      line-height: 21px;
+      margin: 2% auto 0;
+      padding: 0 0 10% 0;
+    }
+  }
+}

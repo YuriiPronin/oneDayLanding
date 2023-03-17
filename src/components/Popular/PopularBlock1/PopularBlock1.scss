@@ -1,0 +1,145 @@
+@import "../../../styles/mixines.scss";
+
+.popularBlock1 {
+  @include onMobile {
+    background-image: url("../../../images/Popular/GradientBlock1.png");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+
+  @include onTablet {
+    background-image: url("../../../images/Popular/GradientBlock3.png");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+
+  @include onDesktop {
+    background-image: url("../../../images/Popular/GradientBlock3.png");
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+  }
+
+  &__button {
+    @include onMobile {
+      display: block;
+      width: 259px;
+      height: 42px;
+      background: none;
+      border: none;
+      text-decoration: underline;
+      text-transform: uppercase;
+      margin: auto;
+    }
+
+    @include onTablet {
+      display: block;
+      width: 259px;
+      height: 42px;
+      background: none;
+      border: none;
+      text-decoration: underline;
+      text-transform: uppercase;
+      margin: auto;
+    }
+
+    @include onDesktop {
+      display: block;
+      width: 259px;
+      height: 42px;
+      background: none;
+      border: none;
+      text-decoration: underline;
+      text-transform: uppercase;
+      float: right;
+      font-size: 20px;
+      line-height: 21px;
+      padding: 5% 2% 5% 0;
+    }
+  }
+}
+
+.swiperBox1 {
+  @include onMobile {
+    margin: 12% auto;
+    width: 50%;
+    height: 70vh;
+  }
+
+  @include onTablet {
+    margin: 12% auto;
+    width: 50%;
+    height: 60vh;
+  }
+
+  @include onDesktop {
+    margin: 12% auto;
+    width: 50%;
+    height: 40vh;
+  }
+
+  &__img {
+    @include onMobile {
+      width: 100%;
+      margin: auto;
+    }
+
+    @include onTablet {
+      width: 150%;
+      margin: auto;
+    }
+
+    @include onDesktop {
+      width: 95%;
+      margin: auto;
+    }
+  }
+
+  &__title {
+    @include onMobile {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 14px;
+      line-height: 21px;
+      text-transform: uppercase;
+    }
+
+    @include onTablet {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 14px;
+      line-height: 21px;
+      text-transform: uppercase;
+    }
+
+    @include onDesktop {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 17px;
+      line-height: 21px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__price {
+    @include onMobile {
+      font-family: sans-serif;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 21px;
+    }
+
+    @include onTablet {
+      font-family: sans-serif;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 21px;
+    }
+
+    @include onDesktop {
+      font-family: sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 21px;
+    }
+  }
+}

@@ -1,0 +1,175 @@
+@import '../../../styles/mixines.scss';
+
+.popularBlock2 {
+  @include onMobile {
+    position: relative;
+    background-image: url('../../../images/Popular/GradientBlock2.png');
+    background-size: cover;
+    width: 100%;
+    height: 129vh;
+  }
+
+  @include onTablet {
+    position: relative;
+    background-image: url('../../../images/Popular/GradientBlock2.png');
+    background-size: cover;
+    width: 100%;
+    height: 129vh;
+  }
+
+  @include onDesktop {
+    position: relative;
+    background-image: url('../../../images/Popular/GradientBlock2.png');
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+  }
+
+  &__title {
+    @include onMobile {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: 700;
+      font-size: 27px;
+      line-height: 33px;
+      text-transform: uppercase;
+      padding: 12% 10% 5% 10%;
+      margin: 0;
+    }
+
+    @include onTablet {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: 700;
+      font-size: 27px;
+      line-height: 33px;
+      text-transform: uppercase;
+      padding: 12% 10% 5% 10%;
+      margin: 0;
+    }
+
+    @include onDesktop {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 42px;
+      text-transform: uppercase;
+      padding: 12% 10% 5% 10%;
+      margin: 0;
+    }
+  }
+
+  &__description {
+    @include onMobile {
+      font-family: sans-serif;
+      font-size: 20px;
+      line-height: 21px;
+      padding: 0 11% 0 10%;
+    }
+
+    @include onTablet {
+      font-family: sans-serif;
+      font-size: 20px;
+      line-height: 21px;
+      padding: 0 11% 0 10%;
+      max-width: 381px;
+    }
+
+    @include onDesktop {
+      font-family: sans-serif;
+      font-size: 20px;
+      line-height: 21px;
+      padding: 0 11% 0 10%;
+      max-width: 381px;
+    }
+  }
+
+  &__img1 {
+    @include onMobile {
+    position: absolute;
+    left: -7%;
+    }
+
+    @include onTablet {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      }
+
+      @include onDesktop {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        }
+
+        @include forPie {
+          position: absolute;
+          right: 28%;
+          bottom: 0;
+        }
+  }
+
+  &__img2 {
+    @include onMobile {
+      position: absolute;
+      right: -4%;
+      top: 30%;
+    }
+
+    @include onTablet {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+
+    @include onDesktop {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+
+    @include forPie {
+      display: none;
+    }
+  }
+}
+
+.honeyPie {
+  @include onTablet {
+    display: none;
+  }
+
+  @include onTablet {
+    display: none;
+  }
+
+  @include onDesktop {
+    display: none;
+  }
+
+  @include forPie {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.fullFruitPie {
+  @include onTablet {
+    display: none;
+  }
+
+  @include onTablet {
+    display: none;
+  }
+
+  @include onDesktop {
+    display: none;
+  }
+
+  @include forPie {
+    display: block;
+    position: absolute;
+    right: 12%;
+    bottom: 0;
+  }
+}

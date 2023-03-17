@@ -1,0 +1,199 @@
+@import '../../../styles/mixines.scss';
+
+.accountInformationMain {
+  background-color: #FFF7F1;
+
+  @include onMobile {
+    position: relative;
+  }
+
+  &__informationButton {
+    @include onMobile {
+      width: 140px;
+      height: 26px;
+      background: none;
+      border: none;
+      border-bottom: 1px solid black;
+      font-family: sans-serif;
+      font-size: 20px;
+      line-height: 26px;
+      margin: 0 0 8% 7%;
+    }
+
+    @include onTablet {
+      width: 140px;
+      height: 26px;
+      background: none;
+      border: none;
+      border-bottom: 1px solid black;
+      font-family: sans-serif;
+      font-size: 20px;
+      line-height: 26px;
+      margin: 0 0 8% 7%;
+    }
+
+    @include onDesktop {
+      width: 140px;
+      height: 26px;
+      background: none;
+      border: none;
+      border-bottom: 1px solid black;
+      font-family: sans-serif;
+      font-size: 20px;
+      line-height: 26px;
+      margin: 0 0 6% 7%;
+    }
+  }
+
+  &__orderButton {
+    @include onMobile {
+      width: 74px;
+      height: 26px;
+      background: none;
+      border: none;
+      font-family: sans-serif;
+      font-size: 20px;
+      line-height: 26px;
+    }
+
+    @include onTablet {
+      width: 74px;
+      height: 26px;
+      background: none;
+      border: none;
+      font-family: sans-serif;
+      font-size: 20px;
+      line-height: 26px;
+    }
+
+    @include onDesktop {
+      width: 74px;
+      height: 26px;
+      background: none;
+      border: none;
+      font-family: sans-serif;
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+
+  &__exitButton {
+    @include onMobile {
+      position: absolute;
+      width: 67px;
+      height: 26px;
+      background: none;
+      border: none;
+      font-family: sans-serif;
+      font-size: 20px;
+      line-height: 26px;
+      top: 5%;
+      right: 5%;
+    }
+
+    @include onTablet {
+      width: 67px;
+      height: 26px;
+      background: none;
+      border: none;
+      font-family: sans-serif;
+      font-size: 20px;
+      line-height: 26px;
+    }
+
+    @include onDesktop {
+      width: 67px;
+      height: 26px;
+      background: none;
+      border: none;
+      font-family: sans-serif;
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+
+  &__text1 {
+    @include onMobile {
+      display: inline-block;
+      font-family: sans-serif;
+      font-size: 20px;
+      line-height: 21px;
+      padding: 0 3% 0 7%;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    @include onTablet {
+      display: inline-block;
+      font-family: sans-serif;
+      font-size: 20px;
+      line-height: 21px;
+      padding: 0 3% 0 7%;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    @include onDesktop {
+      display: inline-block;
+      font-family: sans-serif;
+      font-size: 20px;
+      line-height: 21px;
+      padding: 0 3% 0 7%;
+      text-transform: uppercase;
+      margin: 0;
+    }
+  }
+
+  &__text2 {
+    @include onMobile {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 20px;
+      line-height: 21px;
+      padding: 0 3% 0 7%;
+      text-decoration: underline;
+    }
+
+    @include onTablet {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 20px;
+      line-height: 21px;
+      padding: 0 3% 0 7%;
+      text-decoration: underline;
+    }
+
+    @include onDesktop {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 20px;
+      line-height: 21px;
+      padding: 0 3% 0 7%;
+      text-decoration: underline;
+    }
+  }
+}
+
+.title {
+  display: block;
+  padding: 4% 0 6% 7%;
+}
+
+.addPadd {
+  padding-bottom: 10%;
+}
+
+.penIcon {
+  display: inline-block;
+  padding: 0;
+}
+
+.infoDisplay {
+  @include onTablet {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 0 6%;
+  }
+
+  @include onDesktop {
+    display: flex;
+    flex-direction: row;
+  }
+}

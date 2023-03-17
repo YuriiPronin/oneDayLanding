@@ -1,0 +1,201 @@
+@import "../../../styles/mixines.scss";
+
+.body2 {
+  @include onMobile {
+    background-image: url("../../../images/HomePage/GradientBody2.png");
+    padding: 34px 0 41px 0;
+  }
+
+  @include onTablet {
+    background-image: url("../../../images/HomePage/GradientBody2.png");
+    background-size: cover;
+    padding: 34px 0 41px 0;
+  }
+
+  @include onDesktop {
+    background-image: url("../../../images/HomePage/GradientBody2Desc.png");
+    background-size: cover;
+    padding: 127px 0 41px 0;
+  }
+
+  &__title1 {
+    @include onMobile {
+      font-family: sans-serif;
+      font-size: 12px;
+      line-height: 12px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    @include onTablet {
+      font-family: sans-serif;
+      font-size: 18px;
+      line-height: 12px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    @include onDesktop {
+      font-family: sans-serif;
+      font-size: 20px;
+      line-height: 21px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  &__title2 {
+    @include onMobile {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 16px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    @include onTablet {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 16px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    @include onDesktop {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 42px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  &__button {
+    @include onMobile {
+      width: 173px;
+      height: 32px;
+      background: none;
+      border: none;
+      margin-left: 75px;
+      text-decoration: underline;
+    }
+
+    @include onTablet {
+      display: block;
+      width: 173px;
+      height: 32px;
+      background: none;
+      border: none;
+      font-size: 18px;
+      text-decoration: underline;
+      margin: 0 auto;
+    }
+  }
+}
+
+.container2 {
+  @include onMobile {
+    margin: 0 54px 39px 54px;
+  }
+
+  @include onTablet {
+    margin: 0 54px 39px 54px;
+  }
+
+  @include onDesktop {
+    display: grid;
+    gap: 20px 30px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    margin: 0 0 0 5%;
+  }
+}
+
+.card2 {
+  @include onMobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include onTablet {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include onDesktop {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+  }
+
+  &__photo {
+    @include onMobile {
+      justify-content: center;
+    }
+
+    @include onTablet {
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    @include onMobile {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 21px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    @include onTablet {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 21px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    @include onDesktop {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 21px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__description {
+    @include onMobile {
+      font-family: sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    @include onTablet {
+      font-family: sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    @include onDesktop {
+      font-family: sans-serif;
+      font-size: 22px;
+      line-height: 28px;
+      text-align: center;
+    }
+  }
+}
