@@ -28,5 +28,20 @@ export const body3Api = [
     id: 6,
     title: 'МАКАРУНЫ',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+  },
+  {
+    id: 7,
+    title: 'ДЕСЕРТ С КЛУБНИКОЙ',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+  },
+  {
+    id: 8,
+    title: 'ШАРЛОТКА С КОРИЦЕЙ',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+  },
+  {
+    id: 9,
+    title: 'ТОРТ С ЯГОДАМИ',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
   }
 ];

@@ -18,7 +18,7 @@ export const Body3 = () => {
         ))}
       </div>
 
-      <button className="body3__button">Весь асортимент &#10095;</button>
+      <button className="body3__button"> <span>Весь ассортимент &#10095;</span> </button>
     </div>
   );
 };

@@ -33,19 +33,21 @@ export const Header = () => {
     <>
       <header className="header">
         <nav className="header__nav">
-          <button onClick={handleOpen} className="burgerButton">
-            <img
-              src={require('../../../images/HomePage/burger.png')}
-              alt="burger menu"
-              className="header__burger"
-            />
-          </button>
+          <div className='burgLog'>
+            <button onClick={handleOpen} className="burgerButton">
+              <img
+                src={require('../../../images/HomePage/burger.png')}
+                alt="burger menu"
+                className="header__burger"
+              />
+            </button>
 
-          <img
-            className="header__img"
-            src={require('../../../images/HomePage/zerifIcon.png')}
-            alt="main logo"
-          />
+            <img
+              className="header__img"
+              src={require('../../../images/HomePage/zerifIcon.png')}
+              alt="main logo"
+            />
+          </div>
 
           <div className="desctopLinks">
             <div>
@@ -83,40 +85,40 @@ export const Header = () => {
               </Link>
             </div>
           </div>
+          <div className='iconBox'>
+            <Link to={'/search'}>
+              <img
+                src={require('../../../images/HomePage/searchIcon.png')}
+                alt="search"
+              />
+            </Link>
 
-          <Link to={'/search'}>
-            <img
-              src={require('../../../images/HomePage/searchIcon.png')}
-              alt="search"
-            />
-          </Link>
+            <Link to={'/phone'}>
+              <img
+                src={require('../../../images/HomePage/phoneIcon.png')}
+                alt="phone"
+              />
+            </Link>
 
-          <Link to={'/phone'}>
-            <img
-              src={require('../../../images/HomePage/phoneIcon.png')}
-              alt="phone"
-            />
-          </Link>
+            <Link to={'/account'}>
+              <img
+                src={require('../../../images/HomePage/personIcon.png')}
+                alt="account"
+              />
+            </Link>
 
-          <Link to={'/account'}>
-            <img
-              src={require('../../../images/HomePage/personIcon.png')}
-              alt="account"
-            />
-          </Link>
+            <Link to={'/mail'}>
+              <img
+                src={require('../../../images/HomePage/mailIcon.png')}
+                alt="mail"
+              />
+            </Link>
+          </div>
 
-          <Link to={'/mail'}>
-            <img
-              src={require('../../../images/HomePage/mailIcon.png')}
-              alt="mail"
-            />
-          </Link>
-
-          <select name="language" id="language" className="laguageSelect">
-            <option value="Ukr">UKR</option>
-            <option value="Eng">ENG</option>
-            <option value="Ru">RU</option>
-          </select>
+          <div className='language'>
+            <p className='language__text'>RU</p>
+            <img src={require('../../../images/HomePage/downIcon.png')} alt="" className='language__icon'/>
+          </div>
         </nav>
       </header>
 

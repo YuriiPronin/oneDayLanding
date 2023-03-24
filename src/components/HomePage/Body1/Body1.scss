@@ -6,8 +6,7 @@
     width: 100%;
     height: 100%;
     background-image:  url('../../../images/HomePage/GradientBody1.png');
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 43px;
   }
 
@@ -26,22 +25,13 @@
     width: 100%;
     height: 100%;
     background-image:  url('../../../images/HomePage/GradientBody1Desc.png');
-    // background-position: center;
-    // background-repeat: repeat-y;
     background-size: cover;
     padding-top: 43px;
   }
 
   &__leftCookie {
     @include onMobile {
-      position: absolute;
-      background-image: url('../../../images/HomePage/leftCookie.png');
-      background-repeat: repeat-y;
-      background-size: 100%;
-      width: 50%;
-      height: 100%;
-      left: -5%;
-      top: 0;
+      display: none;
     }
 
     @include onTablet {
@@ -49,9 +39,9 @@
       background-image: url('../../../images/HomePage/leftCookie.png');
       background-repeat: repeat-y;
       background-size: 90%;
-      width: 50%;
+      width: 21%;
       height: 100%;
-      left: -8%;
+      left: 0;
       top: 0;
     }
 
@@ -60,7 +50,7 @@
       background-image: url('../../../images/HomePage/leftCookie.png');
       background-repeat: repeat-y;
       background-size: 60%;
-      width: 50%;
+      width: 31%;
       height: 100%;
       left: 0;
       top: 0;
@@ -69,14 +59,7 @@
 
   &__rightCookie {
     @include onMobile {
-      position: absolute;
-      background-image: url('../../../images/HomePage/rightCookie.png');
-      background-repeat: repeat-y;
-      background-size: 100%;
-      width: 61%;
-      height: 100%;
-      right: -8%;
-      top: 0;
+      display: none;
     }
 
     @include onTablet {
@@ -84,9 +67,9 @@
       background-image: url('../../../images/HomePage/rightCookie.png');
       background-repeat: repeat-y;
       background-size: 55%;
-      width: 61%;
+      width: 31%;
       height: 100%;
-      right: -30%;
+      right: -14%;
       top: 0;
     }
 
@@ -95,9 +78,9 @@
       background-image: url('../../../images/HomePage/rightCookie.png');
       background-repeat: repeat-y;
       background-size: 60%;
-      width: 61%;
+      width: 31%;
       height: 100%;
-      right: -24%;
+      right: -12%;
       top: 0;
     }
   }
@@ -160,32 +143,31 @@
 
 .container1 {
   @include onMobile {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 80%;
-    padding: 18px 40px 35px 40px;
+    display: grid;
+    gap: 20px 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 
   @include onTablet {
     display: grid;
     gap: 20px 20px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    padding: 0 0 0 12%;
+    grid-template-columns: repeat(auto-fit, minmax(212px, 1fr));
+    padding: 0 0 0 16%;
   }
 
   @include onDesktop {
     display: grid;
     gap: 20px 30px;
-    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-    padding: 0 0 0 10%;
+    grid-template-columns: repeat(auto-fit, minmax(317px, 1fr));
+    padding: 0 2% 10% 9%;
   }
 }
 
 .card {
   @include onMobile {
-    width: 124px;
-    height: 185px;
+    display: block;
+    width: 90%;
+    margin: 0 auto 5%;
   }
 
   @include onTablet {
@@ -200,7 +182,9 @@
 
   &__photo {
     @include onMobile {
+      width: 90%;
       margin: auto;
+      padding: 0 0 0 6%;
     }
 
     @include onTablet {
@@ -217,8 +201,8 @@
   &__title {
     @include onMobile {
       font-family: Georgia, 'Times New Roman', Times, serif;
-      font-size: 10px;
-      line-height: 10px;
+      font-size: 20px;
+      line-height: 21px;
       text-align: center;
     }
 
@@ -240,8 +224,8 @@
   &__description {
     @include onMobile {
       font-family: sans-serif;
-      font-size: 10px;
-      line-height: 15px;
+      font-size: 15px;
+      line-height: 22px;
       text-align: center;
     }
 

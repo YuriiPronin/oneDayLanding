@@ -15,7 +15,7 @@
   @include onDesktop {
     background-image: url("../../../images/HomePage/GradientBody2Desc.png");
     background-size: cover;
-    padding: 127px 0 41px 0;
+    padding: 13% 0 41px 0;
   }
 
   &__title1 {
@@ -75,12 +75,13 @@
 
   &__button {
     @include onMobile {
-      width: 173px;
-      height: 32px;
+      display: block;
+      width: 53%;
+      height: 33px;
       background: none;
       border: none;
-      margin-left: 75px;
-      text-decoration: underline;
+      margin: 0 auto;
+      font-size: 15px;
     }
 
     @include onTablet {
@@ -90,8 +91,18 @@
       background: none;
       border: none;
       font-size: 18px;
-      text-decoration: underline;
       margin: 0 auto;
+      text-transform: uppercase;
+    }
+
+    @include onDesktop {
+      display: block;
+      width: 53%;
+      height: 33px;
+      background: none;
+      border: none;
+      margin: 0 auto;
+      font-size: 20px;
     }
   }
 }
@@ -102,14 +113,17 @@
   }
 
   @include onTablet {
-    margin: 0 54px 39px 54px;
+    display: grid;
+    gap: 20px 30px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    margin: 0 0 10% 5%;
   }
 
   @include onDesktop {
     display: grid;
     gap: 20px 30px;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    margin: 0 0 0 5%;
+    margin: 0 0 10% 5%;
   }
 }
 
@@ -127,7 +141,7 @@
   @include onDesktop {
     display: flex;
     flex-direction: column;
-    width: 380px;
+    width: 94%;
   }
 
   &__photo {
@@ -183,19 +197,32 @@
     }
 
     @include onTablet {
+      display: block;
+      max-width: 198px;
       font-family: sans-serif;
       font-size: 16px;
       line-height: 24px;
       justify-content: center;
       align-items: center;
-      text-align: center;
+      margin: 0 auto;
     }
 
     @include onDesktop {
+      display: block;
+      max-width: 276px;
       font-family: sans-serif;
       font-size: 22px;
       line-height: 28px;
-      text-align: center;
+      margin: 0 auto
     }
   }
+}
+
+button span {
+  text-align: center;
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+  margin-bottom: -2px;
+  display: table;
+  margin: 0 auto;
 }

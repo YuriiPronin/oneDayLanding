@@ -80,7 +80,7 @@
       background: none;
       border: none;
       margin-left: 75px;
-      text-decoration: underline;
+      
     }
 
     @include onTablet {
@@ -90,7 +90,7 @@
       background: none;
       border: none;
       margin: 0 auto;
-      text-decoration: underline;
+      
     }
 
     @include onDesktop {
@@ -100,7 +100,8 @@
       background: none;
       border: none;
       margin: 0 auto;
-      text-decoration: underline;
+      font-size: 20px;
+      text-transform: uppercase;
     }
   }
 }
@@ -124,8 +125,8 @@
   @include onDesktop {
     display: grid;
     gap: 20px 30px;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    margin: 0 0 0 8% ;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    margin: 0 0 5% 8% ;
   }
 }
 
@@ -141,8 +142,7 @@
   }
 
   @include onDesktop {
-    width: 195px;
-    height: 255px;
+    width: 75%;
     padding: 0 5px 0 5px;
   }
 
@@ -156,6 +156,7 @@
     }
 
     @include onDesktop {
+      width: 100%;
       display: block;
       margin: 0 auto;
     }
@@ -209,4 +210,13 @@
       text-align: center;
     }
   }
+}
+
+button span {
+  text-align: center;
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+  margin-bottom: -2px;
+  display: table;
+  margin: 0 auto;
 }

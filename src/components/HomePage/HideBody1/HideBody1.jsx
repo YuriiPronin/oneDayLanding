@@ -15,11 +15,11 @@ export const HideBody1 = () => {
         <button className="hideBody1__content--button">Оформить заказ</button>
       </div>
 
-      {/* <img
+      <img
         src={require('../../../images/HomePage/hidenPie.png')}
         alt=""
         className='hidenPie'
-      /> */}
+      />
     </div>
   );
 };

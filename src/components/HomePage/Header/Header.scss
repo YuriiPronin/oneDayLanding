@@ -20,10 +20,9 @@
     @include onMobile {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
       width: 90%;
       height: 15%;
-      padding: 50px 15px 0 15px;
+      padding: 2% 15px 0 15px;
     }
 
     @include onTablet {
@@ -32,7 +31,15 @@
       justify-content: space-between;
       width: 90%;
       height: 15%;
-      padding: 15px 15px 0 15px;
+      padding: 2% 15px 0 15px;
+    }
+
+    @include onDesktop {
+      display: flex;
+      flex-direction: row;
+      width: 90%;
+      height: 15%;
+      padding: 2% 15px 0 15px;
     }
   }
 
@@ -46,7 +53,6 @@
     @include onMobile {
       width: 63px;
       height: 20px;
-      margin-right: 25%;
     }
 
     @include onTablet {
@@ -54,61 +60,13 @@
       height: 20px;
       padding-bottom: 5px;
     }
-  }
-}
 
-.h3 {
-  @include onMobile {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 24px;
-    line-height: 25px;
-    margin-bottom: 3%;
-  }
-
-  @include onTablet {
-    display: inline-block;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 19px;
-    line-height: 23px;
-    margin: 0 auto;
-    max-width: 51%;
-    padding: 10% 0 10% 0;
-  }
-
-  @include onDesktop {
-    display: inline-block;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 50px;
-    line-height: 52px;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-}
-
-.p {
-  @include onMobile {
-    font-family: sans-serif;
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 30px;
-  }
-
-  @include onTablet {
-    display: inline-block;
-    font-family: sans-serif;
-    font-size: 13px;
-    line-height: 19px;
-    text-align: center;
-    margin-bottom: 54px;
-  }
-
-  @include onDesktop {
-    display: inline-block;
-    font-family: sans-serif;
-    font-size: 20px;
-    line-height: 30px;
-    margin: 0 auto;
-    max-width: 51%;
+    @include onDesktop {
+      width: 141px;
+      height: 44px;
+      padding-bottom: 20%;
+      padding-right: 144px;
+    }
   }
 }
 
@@ -136,10 +94,13 @@
   }
 
   @include onDesktop {
+    width: 36%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 25px;
+    justify-content: space-around;
+    gap: 7%;
+    padding: 1% 0 0 0;
+    margin-right: 10%;
   }
 
   &__text {
@@ -161,7 +122,7 @@
   text-decoration: underline;
 }
 
-.laguageSelect {
+.language {
   @include onMobile {
     display: none;
   }
@@ -171,9 +132,24 @@
   }
 
   @include onDesktop {
-    display: inline-block;
-    width: 55px;
-    border: none;
+    display: block;
+    width: 6%;
+    padding: 0.5% 0 0 0;
+  }
+
+  &__text {
+    @include onDesktop {
+      display: inline-block;
+      font-size: 20px;
+      margin: 0 5px 0 0;
+    }
+  }
+
+  &__icon {
+    @include onDesktop {
+      display: inline-block;
+      vertical-align: text-bottom;
+    }
   }
 }
 
@@ -298,4 +274,57 @@
 .burgerSelectIcon {
   display: inline-block;
   vertical-align: middle;
+}
+
+.iconBox {
+  @include onMobile {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 19%;
+  }
+
+  @include onTablet {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 19%;
+  }
+
+  @include onDesktop {
+    width: 13%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 7%;
+    padding: 1% 0 0 0;
+  }
+}
+
+.burgLog {
+  @include onMobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30%;
+  }
+
+  @include onTablet {
+    width: 18%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30%;
+  }
+
+  @include onDesktop {
+    width: 9%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30%;
+    margin-right: 10%;
+  }
 }
