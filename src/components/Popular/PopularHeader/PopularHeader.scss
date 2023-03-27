@@ -21,7 +21,7 @@
     background-image: url('../../../images/Popular/HeaderPopGradient.png');
     background-size: cover;
     width: 100%;
-    height: 20vw;
+    max-height: 20vw;
     grid-template-columns: auto;
     position: relative;
   }

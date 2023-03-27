@@ -43,11 +43,11 @@ export const Header = () => {
               />
             </button>
 
-            <img
+            <Link to={'/'}><img
               className="header__img"
               src={require('../../../images/HomePage/zerifIcon.png')}
               alt="main logo"
-            />
+            /></Link>
           </div>
 
           <div className="desctopLinks">

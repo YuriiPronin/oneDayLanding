@@ -6,16 +6,16 @@ export const Footer = () => {
   return (
     <div className='footer'>
       <div className='footer__block1'>
-        <img
+        <Link to={'/'}><img
           src={require('../../../images/HomePage/footerZerif.png')}
           alt="logo image"
           className='footer__block1--icon'
-        />
-        <img
+        /></Link>
+        <Link to={'/'}><img
           src={require('../../../images/Footer/Logo.png')}
           alt="logo image"
           className='footer__block1--iconDesc'
-        />
+        /></Link>
         <p className='footer__block1--text'>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
