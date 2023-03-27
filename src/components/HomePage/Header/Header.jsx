@@ -1,5 +1,5 @@
 import { React, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../Header/Header.scss';
 
 export const Header = () => {
@@ -29,6 +29,8 @@ export const Header = () => {
   const selectClose = () => {
     setIsSelect(true);
   };
+
+  const navigate = useNavigate();
 
   return (
     <>
@@ -70,7 +72,7 @@ export const Header = () => {
                 <option value="initial" hidden={hideInitialOption}>
                   Товары
                 </option>
-                <option value="/categories">- десерты</option>
+                <option value="/categories" onClick={navigate('categories')}>- десерты</option>
                 <option value="pies">- торты</option>
                 <option value="bakery">- выпечка</option>
                 <option value="chocoStrawberry">
