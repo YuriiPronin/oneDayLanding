@@ -11,6 +11,7 @@ export const Header = () => {
   const handleOnChange = (event) => {
     setValue(event.target.value);
     setHideInitialOption(false);
+    window.location.href = event.target.value;
   };
 
   const handleOpen = () => {
@@ -69,7 +70,7 @@ export const Header = () => {
                 <option value="initial" hidden={hideInitialOption}>
                   Товары
                 </option>
-                <option value="deserts">- десерты</option>
+                <option value="/categories">- десерты</option>
                 <option value="pies">- торты</option>
                 <option value="bakery">- выпечка</option>
                 <option value="chocoStrawberry">

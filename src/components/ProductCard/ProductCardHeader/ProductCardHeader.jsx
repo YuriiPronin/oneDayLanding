@@ -51,9 +51,11 @@ export const ProductCardHeader = () => {
               <button className="productCardHeader__basketButton">
                 Добавить в корзину
               </button>
-              <button className="productCardHeader__counterButton">-</button>
-              <p className="productCardHeader__counterTitle">1</p>
-              <button className="productCardHeader__counterButton">+</button>
+              <div className='counterBox'>
+                <button className="productCardHeader__counterButton">-</button>
+                <p className="productCardHeader__counterTitle">1</p>
+                <button className="productCardHeader__counterButton">+</button>
+              </div>
             </div>
           </div>
         </div>

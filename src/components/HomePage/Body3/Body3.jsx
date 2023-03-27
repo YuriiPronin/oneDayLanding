@@ -18,6 +18,14 @@ export const Body3 = () => {
         ))}
       </div>
 
+      <div className="container3Mob">
+        <div className="container3Mob__card">
+          <img src={require('../../../images/HomePage/body3/1.png')} alt="" className="card3__photo" />
+          <p className="container3Mob__title">ДЕСЕРТ С КЛУБНИКОЙ</p>
+          <p className="container3Mob__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+      </div>
+
       <button className="body3__button"> <span>Весь ассортимент &#10095;</span> </button>
     </div>
   );

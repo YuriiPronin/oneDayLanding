@@ -17,7 +17,9 @@
       font-family: sans-serif;
       font-size: 20px;
       line-height: 26px;
-      margin: 0 0 8% 7%;
+      margin: 0 5% 8% 7%;
+      color: black;
+      text-decoration: none;
     }
 
     @include onTablet {
@@ -29,7 +31,9 @@
       font-family: sans-serif;
       font-size: 20px;
       line-height: 26px;
-      margin: 0 0 8% 7%;
+      margin: 0 5% 8% 7%;
+      color: black;
+      text-decoration: none;
     }
 
     @include onDesktop {
@@ -41,7 +45,9 @@
       font-family: sans-serif;
       font-size: 20px;
       line-height: 26px;
-      margin: 0 0 6% 7%;
+      margin: 0 5% 6% 7%;
+      color: black;
+      text-decoration: none;
     }
   }
 
@@ -54,6 +60,8 @@
       font-family: sans-serif;
       font-size: 20px;
       line-height: 26px;
+      color: black;
+      text-decoration: none;
     }
 
     @include onTablet {
@@ -64,6 +72,9 @@
       font-family: sans-serif;
       font-size: 20px;
       line-height: 26px;
+      margin: 0 5% 0 0;
+      color: black;
+      text-decoration: none;
     }
 
     @include onDesktop {
@@ -74,6 +85,9 @@
       font-family: sans-serif;
       font-size: 20px;
       line-height: 26px;
+      margin: 0 5% 0 0;
+      color: black;
+      text-decoration: none;
     }
   }
 
@@ -89,6 +103,8 @@
       line-height: 26px;
       top: 5%;
       right: 5%;
+      color: black;
+      text-decoration: none;
     }
 
     @include onTablet {
@@ -99,6 +115,8 @@
       font-family: sans-serif;
       font-size: 20px;
       line-height: 26px;
+      color: black;
+      text-decoration: none;
     }
 
     @include onDesktop {
@@ -109,6 +127,8 @@
       font-family: sans-serif;
       font-size: 20px;
       line-height: 26px;
+      color: black;
+      text-decoration: none;
     }
   }
 
@@ -173,11 +193,12 @@
 
 .title {
   display: block;
-  padding: 4% 0 6% 7%;
+  padding: 9% 0 6% 7%;
 }
 
 .addPadd {
-  padding-bottom: 10%;
+  padding-bottom: 30%;
+  margin: 0;
 }
 
 .penIcon {
@@ -195,5 +216,22 @@
   @include onDesktop {
     display: flex;
     flex-direction: row;
+  }
+
+  &__block {
+    @include onMobile {
+      width: 90%;
+      margin: 10% 0 0 0;
+    }
+
+    @include onTablet {
+      width: 50%;
+      margin: 10% 0 10% 0;
+    }
+
+    @include onDesktop {
+      width: 30%;
+      margin: 10% 0 10% 0;
+    }
   }
 }

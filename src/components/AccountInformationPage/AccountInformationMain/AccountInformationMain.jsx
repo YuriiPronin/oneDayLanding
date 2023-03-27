@@ -1,17 +1,18 @@
 import { React } from 'react';
+import { Link } from 'react-router-dom';
 import '../AccountInformationMain/AccountInformationMain.scss';
 
 export const AccountInformationMain = () => {
   return (
     <div className="accountInformationMain">
       <p className="accountInformationMain__text1 title">Личный кабинет</p>
-      <button className="accountInformationMain__informationButton">
+      <Link to={'/account/information'} className="accountInformationMain__informationButton">
         Информация
-      </button>
-      <button className="accountInformationMain__orderButton">Заказы</button>
-      <button className="accountInformationMain__exitButton">Выход</button>
+      </Link>
+      <Link to={'/account/order'} className="accountInformationMain__orderButton" >Заказы</Link>
+      <Link to={'/'} className="accountInformationMain__exitButton">Выход</Link>
       <div className='infoDisplay'>
-        <div>
+        <div className='infoDisplay__block'>
           <p className="accountInformationMain__text1">ФИО</p>
           <img
             src={require('../../../images/AccountInformation/penIcon.png')}
@@ -29,7 +30,7 @@ export const AccountInformationMain = () => {
           />
           <p className="accountInformationMain__text2">+380666137641</p>
         </div>
-        <div>
+        <div className='infoDisplay__block'>
           <p className="accountInformationMain__text1">Email</p>
           <img
             src={require('../../../images/AccountInformation/penIcon.png')}

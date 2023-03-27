@@ -10,15 +10,18 @@
   @include onTablet {
     background-image: url("../../../images/HomePage/GradientFooterDesc.png");
     background-size: cover;
-    padding: 43px 32px 43px 32px;
+    padding: 43px 1.4% 43px 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   @include onDesktop {
-    width: 100%;
+    width: 88.6%;
     height: 100%;
     background-image: url("../../../images/HomePage/GradientFooterDesc.png");
     background-size: cover;
-    padding: 43px 32px 43px 32px;
+    padding: 43px 1.4% 43px 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -33,14 +36,33 @@
 
     &--icon {
       @include onMobile {
+        display: block;
         margin-bottom: 29px;
       }
 
       @include onTablet {
+        display: none;
+      }
+
+      @include onDesktop {
+      display: none;
+      }
+    }
+
+    &--iconDesc {
+      @include onMobile {
+        display: none;
+      }
+
+      @include onTablet {
+        display: block;
+        width: 141px;
+        height: 45px;
         margin-bottom: 29px;
       }
 
       @include onDesktop {
+        display: block;
         width: 141px;
         height: 45px;
         margin-bottom: 29px;
@@ -60,16 +82,17 @@
       @include onTablet {
         font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
           "Lucida Sans", Arial, sans-serif;
-        font-size: 18px;
+        font-size: 13px;
         line-height: 17px;
         color: #fff7f1;
         margin-bottom: 24px;
+        max-width: 281px;
       }
 
       @include onDesktop {
         font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
           "Lucida Sans", Arial, sans-serif;
-        font-size: 11px;
+        font-size: 15px;
         line-height: 17px;
         color: #fff7f1;
         margin-bottom: 24px;
@@ -87,7 +110,7 @@
 
       @include onTablet {
         display: flex;
-        width: 90%;
+        width: 25%;
         justify-content: space-between;
         gap: 12%;
         margin-bottom: 17px;
@@ -111,9 +134,8 @@
     }
 
     @include onTablet {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      display: block;
+      width: 25%;
     }
 
     @include onDesktop {
@@ -133,31 +155,32 @@
       @include onTablet {
         font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
           "Lucida Sans", Arial, sans-serif;
-        font-size: 18px;
-        line-height: 36px;
+        font-size: 16px;
+        line-height: 20px;
         color: #fff7f1;
+        margin: 3px;
       }
 
       @include onDesktop {
         font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
           "Lucida Sans", Arial, sans-serif;
-        font-size: 15px;
+        font-size: 20px;
         line-height: 36px;
         color: #fff7f1;
-        margin: 0;
+        margin: 3px;
       }
     }
   }
 
   &__block3 {
     @include onMobile {
-      display: flex;
-      flex-direction: row;
+      display: none;
     }
 
     @include onTablet {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+      width: 25%;
     }
 
     @include onDesktop {
@@ -181,12 +204,13 @@
         font-size: 15px;
         line-height: 36px;
         color: #fff7f1;
+        margin: 0;
       }
 
       @include onDesktop {
         font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
           "Lucida Sans", Arial, sans-serif;
-        font-size: 12px;
+        font-size: 20px;
         line-height: 36px;
         color: #fff7f1;
         margin: 0;
@@ -194,15 +218,49 @@
     }
 
     &--time {
-      @include onDesktop {
-        display: block;
+      @include onMobile {
+                display: block;
         font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
         "Lucida Sans", Arial, sans-serif;
       font-size: 12px;
       line-height: 36px;
       color: #fff7f1;
+      margin: 4% 0 0 2%;
+      }
+
+      @include onTablet {
+        display: block;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 36px;
+      color: #fff7f1;
       margin: 0;
       }
+
+      @include onDesktop {
+        display: block;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      font-size: 20px;
+      line-height: 36px;
+      color: #fff7f1;
+      margin: 0;
+      }
+    }
+  }
+
+  &__block3Mob {
+    @include onMobile {
+      display: block;
+    }
+
+    @include onTablet {
+      display: none;
+    }
+
+    @include onDesktop {
+      display: none;
     }
   }
 }
@@ -216,10 +274,6 @@
     display: none;
   }
 
-  @include oneMorefooter {
-    display: block;
-  }
-
   @include onDesktop {
     display: flex;
     flex-direction: column;
@@ -227,21 +281,22 @@
   }
 
   &__link {
-    @include oneMorefooter {
+    @include onTablet {
       display: block;
       font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
         "Lucida Sans", Arial, sans-serif;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 36px;
       color: #fff7f1;
       text-decoration: none;
+      margin-bottom: 4%;
     }
 
     @include onDesktop {
       display: block;
       font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
         "Lucida Sans", Arial, sans-serif;
-      font-size: 15px;
+      font-size: 20px;
       line-height: 36px;
       color: #fff7f1;
       text-decoration: none;
@@ -256,7 +311,10 @@
   }
 
   @include onTablet {
-    display: none;
+    display: block;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
   }
 
   @include onDesktop {
@@ -269,5 +327,9 @@
 
 span {
   cursor: pointer;
+}
+
+.divForLink {
+  width: 166px;
 }
 

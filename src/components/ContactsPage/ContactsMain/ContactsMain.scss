@@ -9,7 +9,18 @@ input {
 }
 
 .contactsMain {
-    background-color: #fff7f1;
+  width: 100%;
+  background-color: #FFF7F1;
+
+  @include onMobile {
+    height: 67rem;
+  }
+
+  @include onDesktop {
+    background-image: url('../../../images/Contacts/BgrdGradient.png');
+    background-size: cover;
+  }
+
 
     @include onTablet {
       display: flex;
@@ -74,6 +85,8 @@ input {
         font-size: 20px;
         line-height: 21px;
         padding: 0 0 0 7%;
+        text-transform: uppercase;
+        max-width: 450px;
       }
     }
 
@@ -120,6 +133,7 @@ input {
         flex-direction: row;
         justify-content: space-between;
         padding: 0 7% 15% 7%;
+        max-width: 301px;
       }
     }
   }
@@ -152,7 +166,7 @@ input {
         font-size: 20px;
         line-height: 21px;
         text-transform: uppercase;
-        padding: 0 0 5% 7%;
+        padding: 0 0 2% 7%;
       }
     }
 
@@ -183,6 +197,7 @@ input {
         font-size: 20px;
         margin: 5% 0 15% 7%;
         color: #fff;
+        text-transform: uppercase;
       }
 
       @include onTablet {
@@ -194,6 +209,7 @@ input {
         font-size: 20px;
         margin: 5% 0 15% 7%;
         color: #fff;
+        text-transform: uppercase;
       }
 
       @include onDesktop {
@@ -205,6 +221,7 @@ input {
         font-size: 20px;
         margin: 5% 0 15% 7%;
         color: #fff;
+        text-transform: uppercase;
       }
     }
   }

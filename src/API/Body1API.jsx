@@ -22,23 +22,23 @@ export const body1Api = [
   },
   {
     id: 4,
-    img: '../image/body1/4.png',
-    title: 'ОНЛАЙН ОПЛАТА',
-    description: 'Оплачивайте заказ онлайн прямо на сайте',
-    price: '$ 30.00'
-  },
-  {
-    id: 5,
     img: '../image/body1/5.png',
     title: 'ДОСТАВКА',
     description: 'Доставим Ваш заказ в целости и сохранности',
     price: '$ 30.00'
   },
   {
-    id: 6,
+    id: 5,
     img: '../image/body1/6.png',
     title: 'ВЫСОКОЕ КАЧЕСТВО',
     description: 'Подбираем только качественные ингредиенты',
+    price: '$ 30.00'
+  },
+  {
+    id: 6,
+    img: '../image/body1/4.png',
+    title: 'ОНЛАЙН ОПЛАТА',
+    description: 'Оплачивайте заказ онлайн прямо на сайте',
     price: '$ 30.00'
   }
 ];

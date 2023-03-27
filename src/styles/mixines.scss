@@ -4,14 +4,14 @@
   }
 }
 
-@mixin onTablet {
-  @media (min-width: 577px) {
+@mixin smallMobile {
+  @media (max-width: 280px) {
     @content;
   }
 }
 
-@mixin extraTablet {
-  @media (min-width: 535px) {
+@mixin onTablet {
+  @media (min-width: 577px) {
     @content;
   }
 }

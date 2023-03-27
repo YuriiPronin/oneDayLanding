@@ -5,21 +5,21 @@
     background-image: url("../../../images/Popular/GradientBlock1.png");
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 78vh;
   }
 
   @include onTablet {
     background-image: url("../../../images/Popular/GradientBlock3.png");
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
   }
 
   @include onDesktop {
     background-image: url("../../../images/Popular/GradientBlock3.png");
     background-size: cover;
     width: 100%;
-    height: 80vh;
+    height: 700px;
   }
 
   &__button {
@@ -29,9 +29,8 @@
       height: 42px;
       background: none;
       border: none;
-      text-decoration: underline;
       text-transform: uppercase;
-      margin: auto;
+      margin: 5% auto;
     }
 
     @include onTablet {
@@ -40,9 +39,9 @@
       height: 42px;
       background: none;
       border: none;
-      text-decoration: underline;
       text-transform: uppercase;
-      margin: auto;
+      margin: 5% auto;
+      font-size: 20px;
     }
 
     @include onDesktop {
@@ -51,7 +50,6 @@
       height: 42px;
       background: none;
       border: none;
-      text-decoration: underline;
       text-transform: uppercase;
       float: right;
       font-size: 20px;
@@ -65,7 +63,7 @@
   @include onMobile {
     margin: 12% auto;
     width: 50%;
-    height: 70vh;
+    height: 50vh;
   }
 
   @include onTablet {
@@ -75,14 +73,13 @@
   }
 
   @include onDesktop {
-    margin: 12% auto;
+    margin: 12% auto 30%;
     width: 50%;
     height: 40vh;
   }
 
   &__img {
     @include onMobile {
-      width: 100%;
       margin: auto;
     }
 
@@ -92,7 +89,6 @@
     }
 
     @include onDesktop {
-      width: 95%;
       margin: auto;
     }
   }
@@ -107,16 +103,17 @@
 
     @include onTablet {
       font-family: Georgia, 'Times New Roman', Times, serif;
-      font-size: 14px;
+      font-size: 20px;
       line-height: 21px;
       text-transform: uppercase;
     }
 
     @include onDesktop {
       font-family: Georgia, 'Times New Roman', Times, serif;
-      font-size: 17px;
+      font-size: 20px;
       line-height: 21px;
       text-transform: uppercase;
+      min-width: 345px;
     }
   }
 
@@ -131,7 +128,7 @@
     @include onTablet {
       font-family: sans-serif;
       font-weight: 500;
-      font-size: 15px;
+      font-size: 20px;
       line-height: 21px;
     }
 
@@ -142,4 +139,13 @@
       line-height: 21px;
     }
   }
+}
+
+button span {
+  text-align: center;
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+  margin-bottom: -2px;
+  display: table;
+  margin: 0 auto;
 }

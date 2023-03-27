@@ -43,10 +43,12 @@
       height: 26px;
       background: none;
       border: none;
-      margin: 0 0 0 5%;
+      margin: 0 5% 0 5%;
       font-family: sans-serif;
       font-size: 20px;
       line-height: 26px;
+      color: black;
+      text-decoration: none;
     }
 
     @include onTablet {
@@ -54,10 +56,12 @@
       height: 26px;
       background: none;
       border: none;
-      margin: 0 0 0 5%;
+      margin: 0 5% 0 5%;
       font-family: sans-serif;
       font-size: 20px;
       line-height: 26px;
+      color: black;
+      text-decoration: none;
     }
 
     @include onDesktop {
@@ -65,10 +69,12 @@
       height: 26px;
       background: none;
       border: none;
-      margin: 0 0 0 5%;
+      margin: 0 5% 0 5%;
       font-family: sans-serif;
       font-size: 20px;
       line-height: 26px;
+      color: black;
+      text-decoration: none;
     }
   }
 
@@ -82,6 +88,9 @@
       font-family: sans-serif;
       font-size: 20px;
       line-height: 26px;
+      color: black;
+      text-decoration: none;
+      margin: 0 5% 0 0;
     }
 
     @include onTablet {
@@ -93,6 +102,9 @@
       font-family: sans-serif;
       font-size: 20px;
       line-height: 26px;
+      color: black;
+      text-decoration: none;
+      margin: 0 5% 0 0;
     }
 
     @include onDesktop {
@@ -104,6 +116,9 @@
       font-family: sans-serif;
       font-size: 20px;
       line-height: 26px;
+      color: black;
+      text-decoration: none;
+      margin: 0 5% 0 0;
     }
   }
 
@@ -119,6 +134,8 @@
       font-family: sans-serif;
       font-size: 20px;
       line-height: 26px;
+      color: black;
+      text-decoration: none;
     }
 
     @include onTablet {
@@ -129,6 +146,8 @@
       font-family: sans-serif;
       font-size: 20px;
       line-height: 26px;
+      color: black;
+      text-decoration: none;
     }
 
     @include onDesktop{
@@ -139,6 +158,8 @@
       font-family: sans-serif;
       font-size: 20px;
       line-height: 26px;
+      color: black;
+      text-decoration: none;
     }
   }
 

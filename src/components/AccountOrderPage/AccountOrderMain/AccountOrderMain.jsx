@@ -1,13 +1,14 @@
 import { React } from 'react';
+import { Link } from 'react-router-dom';
 import '../AccountOrderMain/AccountOrderMain.scss';
 
 export const AccountOrderMain = () => {
   return (
     <div className='accountOrderMain'>
       <p className='accountOrderMain__mainTitle'>Личный кабинет</p>
-      <button className='accountOrderMain__infoButton'>Информация</button>
-      <button className='accountOrderMain__orderButton'>Заказы</button>
-      <button className='accountOrderMain__exitButton'>Выход</button>
+      <Link to={'/account/information'} className='accountOrderMain__infoButton'>Информация</Link>
+      <Link to={'/account/order'} className='accountOrderMain__orderButton'>Заказы</Link>
+      <Link to={'/'} className='accountOrderMain__exitButton'>Выход</Link>
       <div className='accountOrderMain__box'>
         <div className='accountOrderMain__columns'>
           <p className='accountOrderMain__titles'>Номер заказа</p>

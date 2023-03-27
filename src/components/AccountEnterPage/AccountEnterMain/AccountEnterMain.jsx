@@ -1,12 +1,15 @@
 import { React } from 'react';
+import { Link } from 'react-router-dom';
 import '../AccountEnterMain/AccountEnterMain.scss';
 
 export const AccountEnterMain = () => {
   return (
     <div className='accountEnterMain'>
       <p className='accountEnterMain__title'>Личный кабинет</p>
-      <button className='accountEnterMain__enterButton'>Вход</button>
-      <button className='accountEnterMain__registrationButton'>Регистрация</button>
+      <div className='buttonBox'>
+        <button className='accountEnterMain__enterButton'>Вход</button>
+        <button className='accountEnterMain__registrationButton'>Регистрация</button>
+      </div>
       <form action="">
         <input
           type="text"
@@ -25,7 +28,7 @@ export const AccountEnterMain = () => {
           />
           <label htmlFor="remember-password">Запомнить меня</label>
         </div>
-        <button className='accountEnterMain__submitButton'>Войти</button>
+        <button className='accountEnterMain__submitButton'> <Link to={'/account/information'} className='linkForPresentation'>Войти</Link> </button>
       </form>
       <button className='accountEnterMain__forgotPassword'>Забыли пароль?</button>
     </div>

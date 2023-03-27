@@ -39,7 +39,7 @@ export const PopularBlock1 = () => {
           <SwiperSlide key={product.id}>
             <div className="swiperBox1">
               <img
-                src={require(`../../../images/HomePage/body1/${product.id}.png`)}
+                src={require(`../../../images/Popular/Pagination/${product.id}.png`)}
                 alt=""
                 className="swiperBox1__img"
               />
@@ -49,7 +49,7 @@ export const PopularBlock1 = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <button className="popularBlock1__button">Весь асортимент &gt;</button>
+      <button className="popularBlock1__button"> <span>Весь ассортимент &gt;</span> </button>
     </div>
   );
 };

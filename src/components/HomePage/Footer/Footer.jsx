@@ -11,6 +11,11 @@ export const Footer = () => {
           alt="logo image"
           className='footer__block1--icon'
         />
+        <img
+          src={require('../../../images/Footer/Logo.png')}
+          alt="logo image"
+          className='footer__block1--iconDesc'
+        />
         <p className='footer__block1--text'>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -36,11 +41,11 @@ export const Footer = () => {
       </div>
 
       <div className='oneMoreFooter'>
-        <Link to={'/'} className='oneMoreFooter__link'><span>Главная</span></Link>
-        <Link to={'/popular'} className='oneMoreFooter__link'><span>Популярное</span></Link>
-        <Link to={'/products'} className='oneMoreFooter__link'><span>Товары</span></Link>
-        <Link to={'/contacts'} className='oneMoreFooter__link'><span>Контакты</span></Link>
-        <Link to={'/account'} className='oneMoreFooter__link'><span>Личный кабинет</span></Link>
+        <div className='divForLink'><Link to={'/'} className='oneMoreFooter__link'>Главная</Link></div>
+        <div className='divForLink'><Link to={'/popular'} className='oneMoreFooter__link'>Популярное</Link></div>
+        <div className='divForLink'><Link to={'/products'} className='oneMoreFooter__link'>Товары</Link></div>
+        <div className='divForLink'><Link to={'/contacts'} className='oneMoreFooter__link'>Контакты</Link></div>
+        <div className='divForLink'><Link to={'/account'} className='oneMoreFooter__link'>Личный кабинет</Link></div>
       </div>
 
       <div className='footer__block2'>
@@ -59,6 +64,10 @@ export const Footer = () => {
         <p className='footer__block3--text'>График работы:</p>
         <p className='footer__block3--text'>Ежедневно</p>
         <p className='footer__block3--time'>с 09:00 до 21:00</p>
+      </div>
+
+      <div className='footer__block3Mob'>
+        <p className='footer__block3--text'>График работы - tжедневно с 09:00 до 21:00</p>
       </div>
     </div>
   );

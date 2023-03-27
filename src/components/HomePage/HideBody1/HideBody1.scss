@@ -52,7 +52,7 @@
         font-size: 20px;
         line-height: 21px;
         margin-bottom: 9%;
-        max-width: 390px;
+        max-width: 355px;
         padding: 0 0 0 4%;
       }
     }
@@ -95,4 +95,10 @@
     left: calc(54% + 14%);
     transform: translateX(-50%);
   }
+}
+
+.proba {
+  display: block;
+  margin: 0 15%;
+  width: 80%;
 }

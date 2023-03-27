@@ -80,7 +80,7 @@
       background-size: 60%;
       width: 31%;
       height: 100%;
-      right: -12%;
+      right: -12.4%;
       top: 0;
     }
   }
@@ -152,7 +152,7 @@
     display: grid;
     gap: 20px 20px;
     grid-template-columns: repeat(auto-fit, minmax(212px, 1fr));
-    padding: 0 0 0 16%;
+    padding: 0 0 10% 16%;
   }
 
   @include onDesktop {
@@ -182,12 +182,14 @@
 
   &__photo {
     @include onMobile {
-      width: 90%;
+      display: block;
+      width: 70%;
       margin: auto;
-      padding: 0 0 0 6%;
+      padding: 0;
     }
 
     @include onTablet {
+      width: 100%;
       margin: auto;
     }
 
