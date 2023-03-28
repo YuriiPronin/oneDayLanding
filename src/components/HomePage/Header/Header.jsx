@@ -1,5 +1,5 @@
 import { React, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import '../Header/Header.scss';
 
 export const Header = () => {
@@ -30,8 +30,6 @@ export const Header = () => {
     setIsSelect(true);
   };
 
-  const navigate = useNavigate();
-
   return (
     <>
       <header className="header">
@@ -54,14 +52,22 @@ export const Header = () => {
 
           <div className="desctopLinks">
             <div>
-              <Link to={'/'} className="desctopLinks__text underline">
+              <NavLink
+                to={'/'}
+                className='desctopLinks__text'
+                activeClassName='desctopLinks__text active'
+              >
                 Главная
-              </Link>
+              </NavLink>
             </div>
             <div>
-              <Link to={'/popular'} className="desctopLinks__text">
+              <NavLink
+                to={'/popular'}
+                className='desctopLinks__text'
+                activeClassName='desctopLinks__text active'
+              >
                 Популярное
-              </Link>
+              </NavLink>
             </div>
             <div>
               <select
@@ -72,7 +78,7 @@ export const Header = () => {
                 <option value="initial" hidden={hideInitialOption}>
                   Товары
                 </option>
-                <option value="/categories" onClick={navigate('categories')}>- десерты</option>
+                <option value="/categories">- десерты</option>
                 <option value="pies">- торты</option>
                 <option value="bakery">- выпечка</option>
                 <option value="chocoStrawberry">
@@ -83,9 +89,13 @@ export const Header = () => {
               </select>
             </div>
             <div>
-              <Link to={'/contacts'} className="desctopLinks__text">
-                Контакты
-              </Link>
+              <NavLink
+                to={'/contacts'}
+                className='desctopLinks__text'
+                activeClassName='desctopLinks__text active'
+              >
+                  Контакты
+              </NavLink>
             </div>
           </div>
           <div className='iconBox'>
