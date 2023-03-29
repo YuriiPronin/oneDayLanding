@@ -6,8 +6,8 @@ export const PopularHeader = () => {
   return (
     <header className="header">
       <div className="popular">
-        <div className='max1440'>
-          <div>
+        <div>
+          <div className='imageBox'>
             <img
               src={require('../../../images/Popular/macaroons.png')}
               alt="macaroons"

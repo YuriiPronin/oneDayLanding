@@ -11,11 +11,13 @@
 
   @include onDesktop {
     display: block;
-    position: relative;
-    background-image: url("../../../images/HomePage/hidenBody2Background.png");
-    background-size: cover;
-    width: 100%;
-    height: 636px;
+    // position: relative;
+    // background-image: url("../../../images/HomePage/hidenBody2Background.png");
+    // background-size: cover;
+    // width: 100%;
+    // height: 636px;
+
+    background-color: #ebc6a8;
   }
 
   &__content {
@@ -88,5 +90,95 @@
     left: 6px;
     width: 58%;
     height: 104%;
+  }
+}
+
+.blockRd3 {
+  height: 575px;
+  position: relative;
+  max-width: 1440px;
+  &__someContent {
+    @include onDesktop {
+      display: flex;
+      flex-direction: column;
+      position: sticky;
+      float: right;
+      width: 586px;
+      height: 89%;
+      padding: 7% 5% 3% 1%;
+      background-color: rgba(255, 252, 250, 0.3);
+      backdrop-filter: blur(15px);
+      z-index: 2;
+    }
+
+        &--title {
+      @include onDesktop {
+        color: black;
+        display: inline-block;
+        max-width: 390px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 42px;
+        margin-bottom: 13%;
+        text-transform: uppercase;
+        padding: 0 0 0 4%;
+        margin: 0 0 1% 0;
+      }
+    }
+
+    &--description {
+            @include onDesktop {
+              display: inline-block;
+              font-family: sans-serif;
+              font-size: 20px;
+              line-height: 21px;
+              margin-bottom: 9%;
+              max-width: 355px;
+              padding: 0 0 0 4%;
+              color: black;
+            }
+          }
+
+          &--button {
+            @include onDesktop {
+                      display: block;
+                      margin: 0 0 0 4%;
+              
+                      width: 61%;
+                      height: 49px;
+              
+                      background: #ebc6a8;
+                      border: none;
+                      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+              
+                      font-size: 20px;
+                      text-transform: uppercase;
+                    }
+          }
+  }
+
+  &__image {
+  }
+  &__imageWrap {
+    position: absolute;
+    top: 29px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    img {
+      max-width: 100%;
+      width: 1440px;
+      height: 689px;
+      object-fit: cover;
+      transform: translateY(-60px);
+    }
+    &1 {
+      z-index: -1;
+      overflow: hidden;
+    }
+    &2 {
+      z-index: 2;
+    }
   }
 }

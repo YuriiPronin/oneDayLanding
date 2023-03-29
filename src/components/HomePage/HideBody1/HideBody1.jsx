@@ -8,9 +8,13 @@ export const HideBody1 = () => {
       <div className='max1440'>
         <div className="blockRd">
           <div className="blockRd__someContent">
-            <p>у нас Своё производство</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <button>оформить заказ</button>
+            <div className='someContentSide'>
+              <p className='blockRd__someContent--title'>у нас Своё производство</p>
+              <p className='blockRd__someContent--description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <button className='blockRd__someContent--button'>оформить заказ</button>
+            </div>
           </div>
           <div className="blockRd__imageWrap blockRd__imageWrap1"><img src={require('../../../images/HomePage/fone.jpg')} alt="" /></div>
           <div className="blockRd__imageWrap blockRd__imageWrap2"><img src={require('../../../images/HomePage/frontNew.png')} alt="" /></div>
