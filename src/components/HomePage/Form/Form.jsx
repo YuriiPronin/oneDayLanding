@@ -38,7 +38,7 @@ export const Form = () => {
             </div>
           </div>
         </div>
-        <div className="onDesctop">
+        {/* <div className="onDesctop">
           <div className="blockRd2">
             <div className="blockRd2__someContent">
               <div className="someContentSide2">
@@ -77,7 +77,7 @@ export const Form = () => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

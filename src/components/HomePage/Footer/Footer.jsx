@@ -107,7 +107,7 @@ export const Footer = () => {
 
       <div className="footer__block3Mob">
         <p className="footer__block3--text">
-          График работы - tжедневно с 09:00 до 21:00
+          График работы - ежедневно с 09:00 до 21:00
         </p>
       </div>
     </div>

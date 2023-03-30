@@ -202,25 +202,25 @@
   }
 }
 
-// .fullPie {
-//   @include onMobile {
-//     display: none;
-//   }
+.fullPie {
+  @include onMobile {
+    display: none;
+  }
 
-//   @include onTablet {
-//     display: none;
-//   }
+  @include onTablet {
+    display: none;
+  }
 
-//   @include onDesktop {
-//     display: block;
-//     position: absolute;
-//     left: 120%;
-//     top: -19%;
-//     z-index: 1;
-//     width: 157%;
-//     height: 119%;
-//   }
-// }
+  @include onDesktop {
+    display: block;
+    position: absolute;
+    left: 120%;
+    top: -19%;
+    z-index: 1;
+    width: 157%;
+    height: 119%;
+  }
+}
 
 .formSide {
   @include onDesktop {
@@ -259,10 +259,20 @@
 }
 
 .blockRd2 {
+  @include onMobile {
+    display: none;
+  }
+
+  @include onTablet {
+    display: none;
+  }
+
+@include onDesktop {
   margin-bottom: 40px;
   height: 575px;
   position: relative;
   max-width: 1440px;
+}
   &__someContent {
     @include onDesktop {
       display: flex;
@@ -326,30 +336,40 @@
   &__image {
   }
   &__imageWrap {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    @include onDesktop {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
     img {
-      max-width: 100%;
-      width: 1440px;
-      height: 689px;
-      object-fit: cover;
-      transform: translateY(-60px);
+      @include onDesktop {
+        max-width: 100%;
+        width: 1440px;
+        height: 689px;
+        object-fit: cover;
+        transform: translateY(-60px);
+      }
     }
     &1 {
-      z-index: -1;
-      overflow: hidden;
+      @include onDesktop {
+        z-index: -1;
+        overflow: hidden;
+      }
     }
     &2 {
-      z-index: 2;
+      @include onDesktop {
+        z-index: 2;
+      }
     }
   }
 }
 
 .someContentSide2 {
-  width: 77%;
-  display: block;
-  margin: 0 auto 5%;
+  @include onDesktop {
+    width: 77%;
+    display: block;
+    margin: 0 auto 5%;
+  }
 }

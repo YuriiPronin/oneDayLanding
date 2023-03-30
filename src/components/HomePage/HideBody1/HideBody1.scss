@@ -1,105 +1,108 @@
 @import "../../../styles/mixines.scss";
 
-// .hideBody1 {
-//   @include onMobile {
-//     display: none;
-//   }
+.hideBody1 {
+  @include onMobile {
+    display: none;
+  }
 
-//   @include onTablet {
-//     display: none;
-//   }
+  @include onTablet {
+    display: none;
+  }
 
-//   @include onDesktop {
-//     display: block;
-//     position: relative;
-//     background-image: url("../../../images/HomePage/fone.jpg");
-//     background-position: center;
-//     background-size: cover;
-//     width: 100%;
-//     height: 100%;
-//   }
+  @include onDesktop {
+    display: block;
+    position: relative;
+    background-image: url("../../../images/HomePage/fone.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
 
-//   &__content {
-//     @include onDesktop {
-//       display: flex;
-//       flex-direction: column;
-//       width: 35%;
-//       height: 66%;
-//       top: 10%;
-//       padding: 7% 5% 5% 1%;
-//       background-color: rgba(255, 252, 250, 0.3);
-//       backdrop-filter: blur(15px);
-//     }
+  &__content {
+    @include onDesktop {
+      display: flex;
+      flex-direction: column;
+      width: 35%;
+      height: 66%;
+      top: 10%;
+      padding: 7% 5% 5% 1%;
+      background-color: rgba(255, 252, 250, 0.3);
+      backdrop-filter: blur(15px);
+    }
 
-//     &--title {
-//       @include onDesktop {
-//         display: inline-block;
-//         max-width: 390px;
-//         font-family: Georgia, "Times New Roman", Times, serif;
-//         font-size: 40px;
-//         line-height: 42px;
-//         margin-bottom: 13%;
-//         text-transform: uppercase;
-//         padding: 0 0 0 4%;
-//         margin: 0 0 1% 0;
-//       }
-//     }
+    &--title {
+      @include onDesktop {
+        display: inline-block;
+        max-width: 390px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 40px;
+        line-height: 42px;
+        margin-bottom: 13%;
+        text-transform: uppercase;
+        padding: 0 0 0 4%;
+        margin: 0 0 1% 0;
+      }
+    }
 
-//     &--description {
-//       @include onDesktop {
-//         display: inline-block;
-//         font-family: sans-serif;
-//         font-size: 20px;
-//         line-height: 21px;
-//         margin-bottom: 9%;
-//         max-width: 355px;
-//         padding: 0 0 0 4%;
-//       }
-//     }
+    &--description {
+      @include onDesktop {
+        display: inline-block;
+        font-family: sans-serif;
+        font-size: 20px;
+        line-height: 21px;
+        margin-bottom: 9%;
+        max-width: 355px;
+        padding: 0 0 0 4%;
+      }
+    }
 
-//     &--button {
-//       @include onDesktop {
-//         display: block;
-//         margin: 0 0 0 4%;
+    &--button {
+      @include onDesktop {
+        display: block;
+        margin: 0 0 0 4%;
 
-//         width: 61%;
-//         height: 49px;
+        width: 61%;
+        height: 49px;
 
-//         background: #ebc6a8;
-//         border: none;
-//         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        background: #ebc6a8;
+        border: none;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-//         font-size: 20px;
-//         text-transform: uppercase;
-//       }
-//     }
-//   }
-// }
+        font-size: 20px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
 
-// .hidenPie {
-//   @include onMobile {
-//     display: none;
-//   }
+.hidenPie {
+  @include onMobile {
+    display: none;
+  }
 
-//   @include onTablet {
-//     display: none;
-//   }
+  @include onTablet {
+    display: none;
+  }
 
-//   @include onDesktop {
-//     display: block;
-//     position: absolute;
-//     top: calc(48% + 11px);
-//     left: 48%;
-//     transform: translateX(-50%) translateY(-50%);
-//   }
-// }
+  @include onDesktop {
+    display: block;
+    position: absolute;
+    top: calc(48% + 11px);
+    left: 48%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
 
 
 
 .blockRd {
-  height: 575px;
-  position: relative;
-  max-width: 1440px;
+  @include onDesktop {
+    height: 575px;
+    position: relative;
+    max-width: 1440px;
+  }
+
   &__someContent {
     @include onDesktop {
       display: flex;
@@ -162,30 +165,54 @@
   &__image {
   }
   &__imageWrap {
-    position: absolute;
+    @include onDesktop {
+      position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    }
     img {
-      max-width: 100%;
-      width: 1440px;
-      height: 689px;
-      object-fit: cover;
-      transform: translateY(-60px);
+      @include onDesktop {
+        max-width: 100%;
+        width: 1440px;
+        height: 689px;
+        object-fit: cover;
+        transform: translateY(-60px);
+      }
     }
     &1 {
-      z-index: -1;
-      overflow: hidden;
+      @include onDesktop {
+        z-index: -1;
+        overflow: hidden;
+      }
     }
     &2 {
-      z-index: 2;
+      @include onDesktop {
+        z-index: 2;
+      }
     }
   }
 }
 
 .someContentSide {
-  display: block;
-  margin: 0 15%;
-  width: 80%;
+  @include onDesktop {
+    display: block;
+    margin: 0 15%;
+    width: 80%;
+  }
+}
+
+.onDesctop {
+  @include onMobile {
+    display: none;
+  }
+
+  @include onTablet {
+    display: none;
+  }
+
+  @include onDesktop {
+    display: block;
+  }
 }

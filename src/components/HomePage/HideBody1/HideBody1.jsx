@@ -4,7 +4,7 @@ import '../../../styles/max1440.scss';
 
 export const HideBody1 = () => {
   return (
-    <div className="hideBody1">
+    <div className="hideBody1 onDectop">
       <div className='max1440'>
         <div className="blockRd">
           <div className="blockRd__someContent">
