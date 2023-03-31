@@ -35,7 +35,7 @@ export const PopularBlock3 = () => {
             hide: false
           }}
           modules={[Scrollbar]}
-          className="mySwiper"
+          className="mySwiper swiper_container"
         >
           {body1Api.map((product) => (
             <SwiperSlide key={product.id}>

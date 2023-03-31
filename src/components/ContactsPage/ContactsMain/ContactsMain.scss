@@ -32,6 +32,11 @@ input {
       width: 50%;
     }
 
+    @include onDesktop {
+      width: 50%;
+      margin-left: 7%;
+    }
+
     &--title {
       @include onMobile {
         font-family: Georgia, "Times New Roman", Times, serif;
@@ -174,16 +179,19 @@ input {
       @include onMobile {
         width: 232px;
         margin: 0 0 0 7%;
+        border: none;
       }
 
       @include onTablet {
         width: 232px;
         margin: 0 0 0 7%;
+        border: none;
       }
 
       @include onDesktop {
         width: 75%;
         margin: 0 0 5% 7%;
+        border: none;
       }
     }
 
@@ -238,5 +246,11 @@ input {
 
   @include onDesktop {
     padding-top: 10%;
+  }
+}
+
+.inputsHeight {
+  @include onDesktop {
+    height: 46px;
   }
 }

@@ -14,7 +14,7 @@ export const HideBody2 = () => {
             <img src={require('../../../images/HiddenBlock2/4.png')} alt="" />
           </div>
           <div className="blockRd3__someContent">
-            <div className="someContentSide">
+            <div className="someContentSide3">
               <h3 className="hideBody2__content--title">Авторские рецепты</h3>
               <p className="hideBody2__content--description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

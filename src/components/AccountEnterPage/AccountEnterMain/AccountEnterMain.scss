@@ -73,11 +73,11 @@
 
     @include onDesktop {
       display: inline-block;
-      width: 50%;
+      width: 416px;
       height: 70px;
       font-family: sans-serif;
-      font-size: 12px;
-      line-height: 15px;
+      font-size: 33px;
+      line-height: 43px;
       background-color: white;
       border: none;
       margin: 0;
@@ -109,11 +109,11 @@
 
     @include onDesktop {
       display: inline-block;
-      width: 50%;
+      width: 416px;
       height: 70px;
       font-family: sans-serif;
-      font-size: 12px;
-      line-height: 15px;
+      font-size: 33px;
+      line-height: 43px;
       background-color: #EFEFEF;
       border: none;
     }
@@ -148,6 +148,18 @@
       border: none;
       border-bottom: 1px solid black;
       margin: 0 auto 10%;
+      padding: 1%;
+    }
+  }
+
+  &__input::placeholder {
+    @include onDesktop {
+      font-family: sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 21px;
+      text-transform: uppercase;
+      color: #000;
     }
   }
 
@@ -165,6 +177,8 @@
     }
 
     @include onDesktop {
+      width: 230px;
+      height: 28px;
       padding: 0 0 10% 20%;
       font-size: 13px;
       line-height: 10px;
@@ -252,11 +266,24 @@
 .buttonBox {
   display: block;
   margin: 0 auto 10%;
-  max-width: 295px;
+  max-width: 836px;
 }
 
 .linkForPresentation {
   width: 100%;
   text-decoration: none;
   color: white;
+}
+
+.checkboxText {
+  @include onDesktop {
+    font-size: 21px;
+    padding-left: 10px;
+    vertical-align: super;
+  }
+}
+
+input[type="checkbox"] {
+  width: 26px;
+  height: 28px;
 }

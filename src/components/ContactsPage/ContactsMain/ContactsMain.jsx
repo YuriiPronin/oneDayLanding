@@ -59,9 +59,9 @@ export const ContactsMain = () => {
         </p>
         <form action="">
           <p className="contactsMain__form--text">Имя</p>
-          <input type="text" className="contactsMain__form--textInputs" />
+          <input type="text" className="contactsMain__form--textInputs inputsHeight" />
           <p className="contactsMain__form--text">Email</p>
-          <input type="text" className="contactsMain__form--textInputs" />
+          <input type="text" className="contactsMain__form--textInputs inputsHeight" />
           <p className="contactsMain__form--text">Комментарий</p>
           <textarea
             name=""

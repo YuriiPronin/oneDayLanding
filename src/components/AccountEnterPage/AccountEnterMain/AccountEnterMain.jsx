@@ -27,7 +27,7 @@ export const AccountEnterMain = () => {
           />
           <div className="accountEnterMain__checkbox">
             <input type="checkbox" id="remember-password" />
-            <label htmlFor="remember-password">Запомнить меня</label>
+            <label htmlFor="remember-password" className='checkboxText'>Запомнить меня</label>
           </div>
           <button className="accountEnterMain__submitButton">
             {' '}
