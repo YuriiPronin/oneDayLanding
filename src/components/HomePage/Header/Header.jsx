@@ -78,7 +78,7 @@ export const Header = () => {
                 <option value="initial" hidden={hideInitialOption}>
                   Товары
                 </option>
-                <option value="/categories">- десерты</option>
+                <option value="/categories"> <NavLink to={'/categories'}>- десерты</NavLink></option>
                 <option value="pies">- торты</option>
                 <option value="bakery">- выпечка</option>
                 <option value="chocoStrawberry">
