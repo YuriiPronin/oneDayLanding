@@ -11,7 +11,8 @@ export const Header = () => {
   const handleOnChange = (event) => {
     setValue(event.target.value);
     setHideInitialOption(false);
-    window.location.href = event.target.value;
+    const select = document.getElementById('my-select');
+    window.location.href = select.options[select.selectedIndex].value;
   };
 
   const handleOpen = () => {
@@ -74,11 +75,12 @@ export const Header = () => {
                 value={value}
                 onChange={handleOnChange}
                 className="categoriesSelect"
+                id='my-select'
               >
                 <option value="initial" hidden={hideInitialOption}>
                   Товары
                 </option>
-                <option value="/categories"> <NavLink to={'/categories'}>- десерты</NavLink></option>
+                <option value="/categories">- десерты</option>
                 <option value="pies">- торты</option>
                 <option value="bakery">- выпечка</option>
                 <option value="chocoStrawberry">
