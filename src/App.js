@@ -17,7 +17,7 @@ function App () {
         <Route path='/' element={<HomePage />}/>
         <Route path='/popular' element={<PopularPage />}/>
         <Route path='/products' element={<ProductCardPage />}/>
-        <Route path='https://onedaylanding.onrender.com/categories' element={<CategoriesPage />}/>
+        <Route path='/categories' element={<CategoriesPage />}/>
         <Route path='/contacts' element={<ContactsPage />}/>
         <Route path='/account' element={<AccountEnterPage />}/>
         <Route path='/account/information' element={<AccountInformationPage />}/>
