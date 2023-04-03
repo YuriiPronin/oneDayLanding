@@ -17,13 +17,14 @@
   }
 
   &__nav {
+
     @include onMobile {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       width: 90%;
       height: 15%;
-      padding: 2% 15px 0 15px;
+      padding: 2% 15px 0 0;
     }
 
     @include onTablet {

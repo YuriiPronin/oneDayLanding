@@ -30,30 +30,35 @@ export const Footer = () => {
             <img
               src={require('../../../images/HomePage/viberIcon.png')}
               alt="viber icon"
+              className='iconFrame'
             />
           </Link>
           <Link to={''}>
             <img
               src={require('../../../images/HomePage/facebookIcon.png')}
               alt="facebook icon"
+              className='iconFrame'
             />
           </Link>
           <Link to={''}>
             <img
               src={require('../../../images/HomePage/youtubeIcon.png')}
               alt="youtube icon"
+              className='iconFrame'
             />
           </Link>
           <Link to={''}>
             <img
               src={require('../../../images/HomePage/watsapIcon.png')}
               alt="watsap icon"
+              className='iconFrame'
             />
           </Link>
           <Link to={''}>
             <img
               src={require('../../../images/HomePage/telegramIcon.png')}
               alt="telegram icon"
+              className='iconFrame'
             />
           </Link>
         </div>
