@@ -1,0 +1,472 @@
+@import '../../styles/mixines.scss';
+
+.helperLink {
+  text-decoration: none;
+  color: white;
+}
+
+.basket {
+  @include onMobile {
+    display: block;
+    background-color: #FFF7F1;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 20% 0;
+  }
+
+  @include onTablet {
+    background-image: url('../../images/BasketPage/Gradient.png');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 20% 0;
+  }
+
+  @include onDesktop {
+    background-image: url('../../images/BasketPage/Gradient.png');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 20% 0;
+  }
+
+  &__title {
+    @include onMobile {
+      font-family: sans-serif;
+      font-size: 20px;
+      line-height: 21px;
+      text-transform: uppercase;
+      padding: 10% 0 10% 5%;
+    }
+
+    @include onTablet {
+      font-family: sans-serif;
+      font-size: 20px;
+      line-height: 21px;
+      text-transform: uppercase;
+      padding: 5% 0 1% 10%;
+    }
+
+    @include onDesktop {
+      font-family: sans-serif;
+      font-size: 20px;
+      line-height: 21px;
+      text-transform: uppercase;
+      padding: 5% 0 1% 10%;
+    }
+  }
+
+  &__button {
+    @include onMobile {
+      display: block;
+      margin: 0 auto;
+      padding: 13px 24px;
+
+      width: 90%;
+      height: 47px;
+      border: none;
+      background-color: #08090B;
+
+      font-size: 20px;
+      line-height: 21px;
+      text-transform: uppercase;
+      color: white;
+    }
+
+    @include onTablet {
+      display: block;
+      float: right;
+      margin: 2% 8% 0 0;
+      padding: 13px 24px;
+
+      width: 40%;
+      height: 47px;
+      border: none;
+      background-color: #08090B;
+
+      font-size: 20px;
+      line-height: 21px;
+      text-transform: uppercase;
+      color: white;
+    }
+
+    @include onDesktop {
+      display: block;
+      float: right;
+      margin: 2% 8% 0 0;
+      padding: 13px 24px;
+
+      width: 40%;
+      height: 47px;
+      border: none;
+      background-color: #08090B;
+
+      font-size: 20px;
+      line-height: 21px;
+      text-transform: uppercase;
+      color: white;
+    }
+  }
+}
+
+.basketBox {
+  @include onMobile {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  @include onTablet {
+    display: block;
+    background-color: #FFF7F1;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2%;
+  }
+
+  @include onDesktop {
+    display: block;
+    background-color: #FFF7F1;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2%;
+  }
+}
+
+.basketBlock1 {
+  @include onMobile {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @include onTablet {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  @include onDesktop {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  &__img {
+    @include onMobile {
+      width: 47px;
+      height: 47px;
+    }
+
+    @include onTablet {
+      width: 50px;
+      height: 47px;
+    }
+
+    @include onDesktop {
+      width: 50px;
+      height: 47px;
+    }
+  }
+
+  
+
+  &__title {
+    @include onMobile {
+      font-family: sans-serif;
+      font-size: 15px;
+      line-height: 22px;
+      margin: 0;
+    }
+
+    @include onTablet {
+      font-family: sans-serif;
+      font-size: 15px;
+      line-height: 22px;
+      margin: 0;
+    }
+
+    @include onDesktop {
+      font-family: sans-serif;
+      font-size: 15px;
+      line-height: 22px;
+      margin: 0;
+    }
+  }
+
+  &__counterBox {
+    @include onMobile {
+      width: 100px;
+      height: 47px;
+    }
+
+    @include onTablet {
+      width: 100px;
+      height: 47px;
+    }
+
+    @include onDesktop {
+      width: 100px;
+      height: 47px;
+    }
+  }
+
+  &__counterButton {
+    @include onMobile {
+      display: inline-block;
+      border: none;
+      background: none;
+      width: 25%;
+      font-size: 16px;
+    }
+
+    @include onTablet {
+      display: inline-block;
+      border: none;
+      background: none;
+      width: 25%;
+      font-size: 17px;
+    }
+
+    @include onDesktop {
+      display: inline-block;
+      border: none;
+      background: none;
+      width: 25%;
+      font-size: 17px;
+    }
+  }
+
+  &__counterText {
+    @include onMobile {
+      display: inline-block;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 20px;
+      margin: 0 5% 0 5%;
+    }
+
+    @include onTablet {
+      display: inline-block;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 20px;
+      margin: 0 5% 0 5%;
+    }
+
+    @include onDesktop {
+      display: inline-block;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 20px;
+      margin: 0 5% 0 5%;
+    }
+  }
+
+  &__price {
+    @include onMobile {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 20px;
+      color: #431F1D;
+      margin: 10px 125% 0 0;
+    }
+
+    @include onTablet {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 20px;
+      color: #431F1D;
+      margin: 10px 25% 0 0;
+    }
+
+    @include onDesktop {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 20px;
+      color: #431F1D;
+      margin: 10px 55% 0 0;
+    }
+  }
+
+  &__resetButton {
+    @include onMobile {
+      width: 8px;
+      height: 8px;
+      margin: 18px 0 0 0;
+    }
+
+    @include onTablet {
+      width: 8px;
+      height: 8px;
+      margin: 18px 0 0 0;
+    }
+
+    @include onDesktop {
+      width: 8px;
+      height: 8px;
+      margin: 18px 0 0 0;
+    }
+  }
+}
+
+.imgBlock {
+  @include onMobile {
+    margin: 0 5% 0 0;
+  }
+
+  @include onTablet {
+    width: 7%;
+    margin: 0 2% 0 0;
+  }
+
+  @include onDesktop {
+    width: 7%;
+    margin: 0 7% 0 0;
+  }
+}
+
+.counterBlock {
+  @include onMobile {
+    margin: 0 18% 0 0;
+  }
+
+  @include onTablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 83%;
+    margin: 0;
+    padding: 10px 0 0 0;
+  }
+
+  @include onDesktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 83%;
+    margin: 0;
+    padding: 10px 0 0 0;
+  }
+}
+
+.priceNcloseBlock {
+  @include onMobile {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @include onTablet {
+    display: flex;
+    flex-direction: row;
+    width: 10%;
+  }
+
+  @include onDesktop {
+    display: flex;
+    flex-direction: row;
+    width: 10%;
+  }
+}
+
+.basketBlock2 {
+  &__productPrice {
+    @include onMobile {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    @include onTablet {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    @include onDesktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__delivery {
+    @include onMobile {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    @include onTablet {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    @include onDesktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__fullCoast {
+    @include onMobile {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    @include onTablet {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    @include onDesktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__text {
+    @include onMobile {
+      font-family: sans-serif;
+      font-size: 15px;
+      line-height: 22px;
+      max-width: 100px;
+    }
+
+    @include onTablet {
+      font-family: sans-serif;
+      font-size: 15px;
+      line-height: 22px;
+    }
+
+    @include onDesktop {
+      font-family: sans-serif;
+      font-size: 15px;
+      line-height: 22px;
+    }
+  }
+
+  &__textBald {
+    @include onMobile {
+      font-family: sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 21px;
+      text-transform: uppercase;
+    }
+
+    @include onTablet {
+      font-family: sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 21px;
+      text-transform: uppercase;
+    }
+
+    @include onDesktop {
+      font-family: sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 21px;
+      text-transform: uppercase;
+    }
+  }
+}

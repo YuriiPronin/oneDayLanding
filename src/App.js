@@ -9,6 +9,8 @@ import { ContactsPage } from './Pages/ContactsPage';
 import { AccountEnterPage } from './Pages/AccountEnterPage';
 import { AccountInformationPage } from './Pages/AccountInformationPage';
 import { AccountOrderPage } from './Pages/AccountOrderPage';
+import { BasketPage } from './Pages/BasketPage';
+import { BasketOrderPage } from './Pages/BasketOrderPage';
 
 function App () {
   return (
@@ -22,6 +24,8 @@ function App () {
         <Route path='/account' element={<AccountEnterPage />}/>
         <Route path='/account/information' element={<AccountInformationPage />}/>
         <Route path='/account/order' element={<AccountOrderPage />}/>
+        <Route path='/basket' element={<BasketPage/>}/>
+        <Route path='/basket/order' element={<BasketOrderPage />}/>
       </Routes>
     </div>
   );

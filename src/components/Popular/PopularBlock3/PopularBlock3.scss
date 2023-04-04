@@ -31,6 +31,7 @@
       border: none;
       text-transform: uppercase;
       margin: 5% auto;
+      font-size: 20px;
     }
 
     @include onTablet {
@@ -62,7 +63,7 @@
 .swiperBox2 {
   @include onMobile {
     margin: 19% auto 37%;
-    width: 50%;
+    width: 70%;
     height: 35vh;
   }
 

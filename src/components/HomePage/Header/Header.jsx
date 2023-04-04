@@ -7,6 +7,7 @@ export const Header = () => {
   const [hideInitialOption, setHideInitialOption] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
   const [isSelect, setIsSelect] = useState(true);
+  const [isSearch, setIsSearch] = useState(false);
 
   const handleOnChange = (event) => {
     setValue(event.target.value);
@@ -29,6 +30,10 @@ export const Header = () => {
 
   const selectClose = () => {
     setIsSelect(true);
+  };
+
+  const searchOpen = () => {
+    setIsSearch(!isSearch);
   };
 
   return (
@@ -99,9 +104,16 @@ export const Header = () => {
                   Контакты
               </NavLink>
             </div>
+            {isSearch && (
+              <div>
+                <form action="">
+                  <input type="text" className='searchInput'/>
+                </form>
+              </div>
+            )}
           </div>
           <div className='iconBox'>
-            <Link to={'/search'}>
+            <Link onClick={searchOpen}>
               <img
                 src={require('../../../images/HomePage/searchIcon.png')}
                 alt="search"
@@ -122,10 +134,10 @@ export const Header = () => {
               />
             </Link>
 
-            <Link to={'/mail'}>
+            <Link to={'/basket'}>
               <img
-                src={require('../../../images/HomePage/mailIcon.png')}
-                alt="mail"
+                src={require('../../../images/HomePage/basketIcon.png')}
+                alt="basket"
               />
             </Link>
           </div>
@@ -135,6 +147,13 @@ export const Header = () => {
             <img src={require('../../../images/HomePage/downIcon.png')} alt="" className='language__icon'/>
           </div>
         </nav>
+        {isSearch && (
+          <div className='searchList'>
+            <img src={require('../../../images/BasketPage/productImage.png')} alt="" className='searchList__image'/>
+            <p className='searchList__title'>Торт с ягодами</p>
+            <p className='searchList__price'>50$</p>
+          </div>
+        )}
       </header>
 
       {isOpen && (
